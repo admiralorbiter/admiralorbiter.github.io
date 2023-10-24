@@ -1,143 +1,177 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Data Science & NC3 Trane Certification</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      #dynamicLinks {
+        display: flex;
+        align-items: center;
+      }
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Data Science & NC3 Trane Certification</title>
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet">
-  <style>
-    #dynamicLinks {
-      display: flex;
-      align-items: center;
-    }
+      .navbar {
+        margin-left: -20px;
+        /* Move the navbar 20 pixels to the left */
+      }
+    </style>
+  </head>
 
-    .navbar {
-      margin-left: -20px;
-      /* Move the navbar 20 pixels to the left */
-    }
-  </style>
-</head>
+  <body>
+    <!-- Header -->
+    <header id="header" class="bg-primary text-white">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+          <a class="navbar-brand" href="#">Data Science</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="moduleDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Modules
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="moduleDropdown">
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="#"
+                      onclick="loadModule('module1')"
+                      >1. Overview</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="#"
+                      onclick="loadModule('module2')"
+                      >2. Graphs and Data</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="#"
+                      onclick="loadModule('module3')"
+                      >3. Tableau</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <!-- Placeholder for dynamic links -->
+              <div id="dynamicLinks"></div>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
 
-<body>
- 
+    <!-- Hero Section -->
+    <section
+      id="hero"
+      class="bg-secondary text-white d-flex align-items-center"
+      style="height: 50vh"
+    >
+      <div class="container text-center">
+        <h1>Welcome to PREP-KC</h1>
+        <h2>NC3 Trane Supplementary Curriculum</h2>
+        <p>Data do, what data does</p>
+        <!-- <img src="data.png" alt="Data Image" /> -->
+        <a href="about.html" class="btn btn-primary btn-lg">Learn More</a>
+      </div>
+    </section>
 
-  <!-- Header -->
-  <header id="header" class="bg-primary text-white">
-    <div class="container">
-      <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-        <a class="navbar-brand" href="#">Data Science</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul class="navbar-nav">
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="moduleDropdown" role="button" data-bs-toggle="dropdown"
-                aria-expanded="false">
-                Modules
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="moduleDropdown">
-                <li><a class="dropdown-item" href="#" onclick="loadModule('module1')">1. Overview</a></li>
-                <li><a class="dropdown-item" href="#" onclick="loadModule('module2')">2. Graphs and Data</a></li>
-                <li><a class="dropdown-item" href="#" onclick="loadModule('module3')">3. Tableau</a></li>
-                <li><a class="dropdown-item" href="#" onclick="loadModule('module4')">4. Process</a></li>
-              </ul>
-            </li>
-            <!-- Placeholder for dynamic links -->
-            <div id="dynamicLinks">
-            </div>
-          </ul>
-        </div>
-      </nav>
-    </div>
-  </header>
-
-  <!-- Hero Section -->
-  <section id="hero" class="bg-secondary text-white d-flex align-items-center" style="height: 50vh;">
-    <div class="container text-center">
-      <h1>Welcome to PREP-KC</h1>
-      <h2>NC3 Trane Supplementary Curriculum</h2>
-      <p>Data do, what data does</p>
-      <!-- <img src="data.png" alt="Data Image" /> -->
-      <a href="about.html" class="btn btn-primary btn-lg">Learn More</a>
-   <a href=
-    </div>
-  </section>
- 
-
-
-
-
-  <!-- Features Section -->
-  <section id="features" class="bg-light py-5">
-    <div class="container text-center">
-      <h2>NC3 Certification Key Features</h2>
-      <div class="row">
-        <!-- Feature 1 -->
-        <div class="col-md-4">
-          <div class="card">
-            <!-- <img src="feature1.jpg" class="card-img-top" alt="Feature 1"> -->
-            <div class="card-body">
-              <h5 class="card-title">Industry Recognition</h5>
-              <p class="card-text">Highly recognized in the industry, this certification opens doors to top-tier data
-                science roles.</p>
+    <!-- Features Section -->
+    <section id="features" class="bg-light py-5">
+      <div class="container text-center">
+        <h2>NC3 Certification Key Features</h2>
+        <div class="row">
+          <!-- Feature 1 -->
+          <div class="col-md-4">
+            <div class="card">
+              <!-- <img src="feature1.jpg" class="card-img-top" alt="Feature 1"> -->
+              <div class="card-body">
+                <h5 class="card-title">Industry Recognition</h5>
+                <p class="card-text">
+                  Highly recognized in the industry, this certification opens
+                  doors to top-tier data science roles.
+                </p>
+              </div>
             </div>
           </div>
-        </div>
-        <!-- Feature 2 -->
-        <div class="col-md-4">
-          <div class="card">
-            <!-- <img src="feature2.jpg" class="card-img-top" alt="Feature 2"> -->
-            <div class="card-body">
-              <h5 class="card-title">Comprehensive Curriculum</h5>
-              <p class="card-text">Covering a wide range of data science topics, from machine learning to data
-                visualization.</p>
+          <!-- Feature 2 -->
+          <div class="col-md-4">
+            <div class="card">
+              <!-- <img src="feature2.jpg" class="card-img-top" alt="Feature 2"> -->
+              <div class="card-body">
+                <h5 class="card-title">Comprehensive Curriculum</h5>
+                <p class="card-text">
+                  Covering a wide range of data science topics, from machine
+                  learning to data visualization.
+                </p>
+              </div>
             </div>
           </div>
-        </div>
-        <!-- Feature 3 -->
-        <div class="col-md-4">
-          <div class="card">
-            <!-- <img src="feature3.jpg" class="card-img-top" alt="Feature 3"> -->
-            <div class="card-body">
-              <h5 class="card-title">Hands-On Training</h5>
-              <p class="card-text">Engage in real-world projects and get hands-on experience with state-of-the-art
-                tools.</p>
+          <!-- Feature 3 -->
+          <div class="col-md-4">
+            <div class="card">
+              <!-- <img src="feature3.jpg" class="card-img-top" alt="Feature 3"> -->
+              <div class="card-body">
+                <h5 class="card-title">Hands-On Training</h5>
+                <p class="card-text">
+                  Engage in real-world projects and get hands-on experience with
+                  state-of-the-art tools.
+                </p>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-
-
-  <!-- Footer -->
-  <footer id="footer" class="bg-dark text-white py-4">
-    <div class="container text-center">
-      <p>&copy; 2023 PREP-KC. All rights reserved.</p>
-      <div>
-        <a href="#" class="text-white mx-2">Privacy Policy</a>
-        <a href="#" class="text-white mx-2">Terms of Service</a>
+    <!-- Footer -->
+    <footer id="footer" class="bg-dark text-white py-4">
+      <div class="container text-center">
+        <p>&copy; 2023 PREP-KC. All rights reserved.</p>
+        <div>
+          <a href="#" class="text-white mx-2">Privacy Policy</a>
+          <a href="#" class="text-white mx-2">Terms of Service</a>
+        </div>
       </div>
-    </div>
-  </footer>
+    </footer>
 
+    <!-- Bootstrap JS (optional) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
 
-  <!-- Bootstrap JS (optional) -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      function loadModule(module) {
+        let links = "";
+        const dynamicLinks = document.getElementById("dynamicLinks");
 
-  <script>
-    function loadModule(module) {
-      let links = '';
-      const dynamicLinks = document.getElementById('dynamicLinks');
-
-      switch (module) {
-        case 'module1':
-          links = `
+        switch (module) {
+          case "module1":
+            links = `
           <li class="nav-item"><a class="nav-link" href="Module1/pioneers.html">Early Pioneers</a></li>
           <li class="nav-item"><a class="nav-link" href="Module1/early_analysis.html">Role of Early Analysis</a></li>
           <li class="nav-item"><a class="nav-link" href="Module1/careers.html">Careers</a></li>
@@ -145,9 +179,9 @@
            <li class="nav-item"><a class="nav-link" href="Module1/big_data.html">Big Data</a></li>
           <li class="nav-item"><a class="nav-link" href="Module1/technology_evolution.html">Technology Evolution</a></li>
               `;
-          break;
-        case 'module2':
-          links = `
+            break;
+          case "module2":
+            links = `
           <li class="nav-item"><a class="nav-link" href="Module2/graphs.html">Graph Guide</a></li>
           <li class="nav-item"><a class="nav-link" href="Module2/Understanding_Missing_Data_and_Zero_Values_in_Datasets.html">Missing Data and Zero Values</a></li>
           <li class="nav-item"><a class="nav-link" href="Module2/The_Scale_of_Data__From_Bytes_to_Zettabytes.html">Scale of Data</a></li>
@@ -155,9 +189,9 @@
           <li class="nav-item"><a class="nav-link" href="Module2/The_Importance_of_Data_Quality_in_Analytics.html">Data Analytics</a></li>
           <li class="nav-item"><a class="nav-link" href="Module2/The_Trade-off_Between_Data_Accuracy_and_Speed.html">Trade-Off</a></li>
               `;
-          break;
-        case 'module3':
-          links = `
+            break;
+          case "module3":
+            links = `
                 <li class="nav-item"><a class="nav-link" href="Module3/intro.html">Introduction</a></li>
                 <li class="nav-item"><a class="nav-link" href="Module3/basicconcepts.html">Basic Concepts</a></li>
                 <li class="nav-item"><a class="nav-link" href="Module3/basiccharts.html">Basic Charts</a></li>
@@ -167,15 +201,14 @@
                 <li class="nav-item"><a class="nav-link" href="Module3/sharing.html">Sharing</a></li>
                 <li class="nav-item"><a class="nav-link" href="Module3/playlists.html">Playlists</a></li>
                 `;
-          break;
+            break;
+        }
+
+        dynamicLinks.innerHTML = links;
       }
-
-      dynamicLinks.innerHTML = links;
-    }
-    document.addEventListener("DOMContentLoaded", function () {
-      loadModule('module1');
-    });
-  </script>
-</body>
-
+      document.addEventListener("DOMContentLoaded", function () {
+        loadModule("module1");
+      });
+    </script>
+  </body>
 </html>
