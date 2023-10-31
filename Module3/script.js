@@ -25,7 +25,6 @@ function loadModule(module) {
         break;
       case 'module3':
         links = `
-        <li class="nav-item"><a class="nav-link" href="../Module3/intro.html">Introduction</a></li>
         <li class="nav-item"><a class="nav-link" href="../Module3/basicconcepts.html">Basic Concepts</a></li>
         <li class="nav-item"><a class="nav-link" href="../Module3/basiccharts.html">Basic Charts</a></li>
         <li class="nav-item"><a class="nav-link" href="../Module3/customizing.html">Customizing</a></li>
@@ -41,7 +40,7 @@ function loadModule(module) {
     dynamicLinks.innerHTML = links;
   }
   document.addEventListener("DOMContentLoaded", function() {
-      loadModule('module2');
+      loadModule('module3');
   });
 
   document.getElementById('dataSizeSlider').addEventListener('input', function(e) {
