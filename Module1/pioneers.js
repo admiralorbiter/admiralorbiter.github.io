@@ -243,8 +243,7 @@ document.addEventListener("DOMContentLoaded", function () {
         <div class="container mt-5">
             <h1 class="mb-4">Pioneers in Data Science</h1>
             <p class="mb-4">
-                The field of data science, though modern in its current form, has roots that trace back to several pioneers who laid the foundation with their innovative ideas and visualizations. Let's explore a few notable figures who significantly impacted this domain.
-            </p>
+            The field of data science, though modern in its current form, has roots that trace back to several pioneers who laid the foundation with their innovative ideas and visualizations. Through data analytics, insightful patterns and trends can be unveiled, guiding awareness campaigns and behavior modification initiatives to foster desired changes. Let's explore a few notable figures who significantly impacted this domain.            </p>
             
             <h2 class="mb-3">Charles Minard</h2>
             <p class="mb-4">
