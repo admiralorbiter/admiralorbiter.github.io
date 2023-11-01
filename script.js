@@ -25,7 +25,6 @@ function loadModule(module) {
         break;
       case 'module3':
         links = `
-        <li class="nav-item"><a class="nav-link" href="../Module3/intro.html">Introduction</a></li>
         <li class="nav-item"><a class="nav-link" href="../Module3/basicconcepts.html">Basic Concepts</a></li>
         <li class="nav-item"><a class="nav-link" href="../Module3/basiccharts.html">Basic Charts</a></li>
         <li class="nav-item"><a class="nav-link" href="../Module3/cutomizing.html">Cutomizing</a></li>
