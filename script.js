@@ -5,12 +5,12 @@ function loadModule(module) {
     switch(module) {
       case 'module1':
         links = `
-          <li class="nav-item"><a class="nav-link" href="../Module1/pioneers.html">Early Pioneers</a></li>
-          <li class="nav-item"><a class="nav-link" href="../Module1/early_analysis.html">Role of Early Analysis</a></li>
-          <li class="nav-item"><a class="nav-link" href="../Module1/careers.html">Careers</a></li>
-          <li class="nav-item"><a class="nav-link" href="../Module1/modern_data_collection.html">Modern Data Collection</a></li>
-           <li class="nav-item"><a class="nav-link" href="../Module1/big_data.html">Big Data</a></li>
-          <li class="nav-item"><a class="nav-link" href="../Module1/technology_evolution.html">Technology Evolution</a></li>
+          <li class="nav-item"><a class="nav-link" href="../module1/big_data.html">Big Data</a></li>
+          <li class="nav-item"><a class="nav-link" href="../module1/careers.html">Careers</a></li>
+          <li class="nav-item"><a class="nav-link" href="../module1/modern_data_collection.html">Modern Data Collection</a></li>
+          <li class="nav-item"><a class="nav-link" href="../module1/technology_evolution.html">Technology Evolution</a></li>
+          <li class="nav-item"><a class="nav-link" href="../module1/pioneers.html">Early Pioneers</a></li>
+          <li class="nav-item"><a class="nav-link" href="../module1/early_analysis.html">Role of Early Analysis</a></li>
         `;
         break;
       case 'module2':
@@ -40,4 +40,4 @@ function loadModule(module) {
   }
   document.addEventListener("DOMContentLoaded", function() {
       loadModule('module1');
-  });
+});

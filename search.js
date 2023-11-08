@@ -4,6 +4,11 @@ var myIndex = [
       "content": "Data in Action",
       "url": "/about.html" // URL to the page of the article
     },
+    {
+      "title": "Big Data",
+      "content": "Big data, as the name suggests, refers to extremely large datasets that are too voluminous to draw conclusions from without specialized processing. It's not just about the size but also about the complexity. Such data requires powerful software and computational tools for its processing. As technology has advanced and the cost of creating and storing data has plummeted, the generation and utilization of big data have soared, being used at a rapidly accelerating pace.",
+      "url": "../Module1/big_data.html" // URL to the page of the article
+    }
     // ... more items
   ];
 

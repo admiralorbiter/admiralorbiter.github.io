@@ -1,105 +1,78 @@
 <!DOCTYPE html>
 
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <title>About</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <link href="style.css" rel="stylesheet" />
-  </head>
 
-  <body>
-    <!-- Header -->
-    <header id="header" class="bg-primary text-white">
-      <div class="container">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-          <a class="navbar-brand" href="#">Data Science</a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNavDropdown"
-            aria-controls="navbarNavDropdown"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav">
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  id="moduleDropdown"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Modules
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="moduleDropdown">
-                  <li>
-                    <a
-                      class="dropdown-item"
-                      href="#"
-                      onclick="loadModule('module1')"
-                      >1. Overview</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      class="dropdown-item"
-                      href="#"
-                      onclick="loadModule('module2')"
-                      >2. Graphs and Data</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      class="dropdown-item"
-                      href="#"
-                      onclick="loadModule('module3')"
-                      >3. Tableau</a
-                    >
-                  </li>
-                </ul>
-              </li>
-              <!-- Placeholder for dynamic links -->
-              <div id="dynamicLinks"></div>
-            </ul>
-          </div>
-        </nav>
-      </div>
-    </header>
-    <main class="container mt-5">
-      <h1>PREP-KC</h1>
-      <p>
-        PREP-KC is an organization dedicated to enhancing education and
-        empowering students.
-      </p>
+<head>
+  <meta charset="utf-8" />
+  <title>About</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/fuse.js/dist/fuse.min.js"></script>
+  <link href="style.css" rel="stylesheet" />
+</head>
 
-      <h2>8th Grade Data in Action Course</h2>
-      <p>
-        Data in Action! blends exploring the data science process with
-        experiential learning. The more a student can see the relevance in
-        learning as well as seeing themselves having a possible future in a
-        career only strengthens their beliefs of achieving their dreams. Each
-        module for Data in Action! enhances the exploration of the data science
-        process by providing students the opportunity to interact with Industry
-        through various means.
-      </p>
-      <button
-        onclick="window.location.href='https://www.prepkc.org/dsi'"
-        class="btn btn-primary"
-      >
+<body>
+  <!-- Header -->
+  <header id="header" class="bg-primary text-white">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <a class="navbar-brand" href="#">Data Science</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="moduleDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Modules
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="moduleDropdown">
+                <li>
+                  <a class="dropdown-item" href="#" onclick="loadModule('module1')">1. Overview</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#" onclick="loadModule('module2')">2. Graphs and Data</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#" onclick="loadModule('module3')">3. Tableau</a>
+                </li>
+              </ul>
+            </li>
+            <!-- Placeholder for dynamic links -->
+            <div id="dynamicLinks"></div>
+          </ul>
+        </div>
+        <input type="text" id="search-input" placeholder="Search...">
+        <div id="search-results" class="list-group"></div>
+      </nav>
+    </div>
+  </header>
+  <main class="container mt-5">
+    <h1>PREP-KC</h1>
+    <p>
+      PREP-KC is an organization dedicated to enhancing education and
+      empowering students.
+    </p>
+
+    <h2>8th Grade Data in Action Course</h2>
+    <p>
+      Data in Action! blends exploring the data science process with
+      experiential learning. The more a student can see the relevance in
+      learning as well as seeing themselves having a possible future in a
+      career only strengthens their beliefs of achieving their dreams. Each
+      module for Data in Action! enhances the exploration of the data science
+      process by providing students the opportunity to interact with Industry
+      through various means.
+    </p>
+    <div class="text-center">
+      <button onclick="window.location.href='https://www.prepkc.org/dsi'" class="btn btn-primary">
         About
       </button>
-    </main>
-  </body>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="script.js"></script>
+    </div>
+  </main>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+<script src="search.js"></script>
 </html>
