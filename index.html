@@ -11,6 +11,7 @@
     />
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <script src="https://cdn.jsdelivr.net/npm/fuse.js/dist/fuse.min.js"></script>
     <style>
       #dynamicLinks {
         display: flex;
@@ -85,6 +86,8 @@
               <div id="dynamicLinks"></div>
             </ul>
           </div>
+          <input type="text" id="search-input" placeholder="Search...">
+          <div id="search-results" class="list-group"></div>
         </nav>
       </div>
     </header>
@@ -165,7 +168,7 @@
 
     <!-- Bootstrap JS (optional) -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
-
+    <script src="search.js"></script>
     <script>
       function loadModule(module) {
         let links = "";
