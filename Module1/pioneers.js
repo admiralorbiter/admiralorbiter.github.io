@@ -248,19 +248,16 @@ document.addEventListener("DOMContentLoaded", function () {
             <h2 class="mb-3">Charles Minard</h2>
             <p class="mb-4">
                 Charles Minard, a 19th-century French civil engineer, is renowned for his captivating visual representation of data. His most notable work is the visualization of Napoleon's 1812 Russian campaign, which masterfully depicted multiple data dimensions, including troop strength and temperature, on a two-dimensional plane.
-                // Link Image
             </p>
             
             <h2 class="mb-3">William Playfair</h2>
             <p class="mb-4">
                 Often referred to as the father of statistical graphics, William Playfair introduced many pioneering ideas in the late 18th century. He is credited with inventing the line graph, bar chart, and pie chart, tools that remain fundamental in today's data visualization field.
-                // Link Image
             </p>
             
             <h2 class="mb-3">Florence Nightingale</h2>
             <p class="mb-4">
                 A name synonymous with modern nursing, Florence Nightingale was also a gifted statistician. She used her skills to advocate for sanitary conditions in military hospitals, presenting data in a compelling way. Her "rose diagram" was instrumental in bringing about significant health reforms.
-                // Link Image
             </p>
         </div>
     

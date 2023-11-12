@@ -1,345 +1,512 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Data Science Careers: An Overview</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link href="../style.css" rel="stylesheet" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <title>Data Science Careers: An Overview</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" />
-  <link href="../style.css" rel="stylesheet" />
-</head>
+  <body>
+    <!-- Header -->
+    <header id="header" class="bg-primary text-white">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+          <a class="navbar-brand" href="#">Data Science</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="moduleDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Modules
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="moduleDropdown">
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="#"
+                      onclick="loadModule('module1')"
+                      >1. Overview</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="#"
+                      onclick="loadModule('module2')"
+                      >2. Graphs and Data</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="#"
+                      onclick="loadModule('module3')"
+                      >3. Tableau</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <!-- Placeholder for dynamic links -->
+              <div id="dynamicLinks"></div>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <div class="container mt-5">
+      <h1>Skills for the Modern Data Analyst</h1>
+      <div class="container">
+        <h2 class="mt-5 mb-3">
+          A proficient data analyst needs a mix of both hard and soft skills.
+        </h2>
 
-<body>
-  <!-- Header -->
-  <header id="header" class="bg-primary text-white">
-    <div class="container">
-      <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-        <a class="navbar-brand" href="#">Data Science</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul class="navbar-nav">
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="moduleDropdown" role="button" data-bs-toggle="dropdown"
-                aria-expanded="false">
-                Modules
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="moduleDropdown">
-                <li>
-                  <a class="dropdown-item" href="#" onclick="loadModule('module1')">1. Overview</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#" onclick="loadModule('module2')">2. Graphs and Data</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#" onclick="loadModule('module3')">3. Tableau</a>
-                </li>
-              </ul>
+        <ul class="list-group mb-4">
+          <li class="list-group-item">
+            <strong>Questions: </strong>Data analysts need to be good at asking
+            yourself questions. What is the problem you're trying to solve? Who
+            is the audience? What is the story? This is crucial to communicating
+            your message!
+          </li>
+          <li class="list-group-item">
+            <strong>Business Concepts and Technology:</strong> Understanding the
+            industry you're analyzing is crucial. Technology, especially various
+            software tools, is fundamental in processing large datasets.
+          </li>
+          <li class="list-group-item">
+            <strong>Presentation Skills:</strong> An analyst must be able to
+            communicate their findings clearly and effectively.
+          </li>
+          <li class="list-group-item">
+            <strong>Critical Thinking and Visualization:</strong> Interpreting
+            the data correctly and representing it in a way that's
+            understandable is key.
+          </li>
+          <li class="list-group-item">
+            <strong>Math and Statistics:</strong> The foundation of data
+            analysis lies in math and statistics.
+          </li>
+        </ul>
+      </div>
+      <center>
+        <img
+          src="img/dataanalysts.png"
+          alt="Picture showing data analysts at work in a cartoon environment."
+          width="75%"
+        />
+      </center>
+      <h1>Data Science Careers: An Overview</h1>
+      <p>
+        Experiencing exponential growth, data science careers are emerging
+        across virtually all industries. As a result, the availability of career
+        opportunities is currently outstripping the existing demand, thereby
+        increasing the number of opportunities further.
+      </p>
+      <div class="row">
+        <div class="mt-4 col">
+          <h2>Data Scientist</h2>
+          <p>
+            Data scientists are kind of like the rare unicorns in the world of
+            data work because they know how to do so many different things.
+            They're good at math stuff like statistics, they understand machine
+            learning (which is how computers learn from data), they can make
+            pretty charts and graphs to show data, and they know how to program
+            using special computer languages like Python or R. Their job is to
+            look really carefully at the data to find out interesting things
+            that can help predict what might happen next or help make smart
+            decisions without people having to figure it out each time. They
+            often use big data, which is a ton of information collected from the
+            internet and other places.
+          </p>
+          <p>Very Statistics Heavy</p>
+          <h3>Key Responsibilities</h3>
+          <ul>
+            <li>Data collection and preprocessing</li>
+            <li>Exploratory data analysis</li>
+            <li>Building and validating predictive models</li>
+            <li>Advanced Data visualization and reporting</li>
+            <li>Consulting with stakeholders to apply data-driven solutions</li>
+          </ul>
+
+          <h3>Skills Required</h3>
+          <ul>
+            <li>
+              Strong understanding of statistics and machine learning algorithms
             </li>
-            <!-- Placeholder for dynamic links -->
-            <div id="dynamicLinks"></div>
+            <li>
+              Proficiency in programming languages like Python, R, or Java
+            </li>
+            <li>
+              Experience with data manipulation libraries (e.g., Pandas, NumPy)
+            </li>
+            <li>
+              Familiarity with machine learning libraries (e.g., Scikit-learn,
+              TensorFlow)
+            </li>
+            <li>
+              Excellent communication skills to present findings and insights
+            </li>
           </ul>
         </div>
-      </nav>
-    </div>
-  </header>
-  <div class="container mt-5">
-    <h1>Skills for the Modern Data Analyst</h1>
-    <div class="container">
-      <h2 class="mt-5 mb-3">A proficient data analyst needs a mix of both hard and soft skills.</h2>
 
-      <ul class="list-group mb-4">
-        <li class="list-group-item">
-          <strong>Questions: </strong>Data analysts need to be good at asking yourself questions. What is the problem
-          you're trying to solve? Who is the audience? What is the story? This is crucial to communicating your message!
-        </li>
-        <li class="list-group-item">
-          <strong>Business Concepts and Technology:</strong> Understanding the industry you're analyzing is crucial.
-          Technology, especially various software tools, is fundamental in processing large datasets.
-        </li>
-        <li class="list-group-item">
-          <strong>Presentation Skills:</strong> An analyst must be able to communicate their findings clearly and
-          effectively.
-        </li>
-        <li class="list-group-item">
-          <strong>Critical Thinking and Visualization:</strong> Interpreting the data correctly and representing it in a
-          way that's understandable is key.
-        </li>
-        <li class="list-group-item"><strong>Math and Statistics:</strong> The foundation of data analysis lies in math
-          and statistics.</li>
-      </ul>
-    </div>
-    <center>
-      <img src="img/dataanalysts.png" alt="Picture showing data analysts at work in a cartoon environment."
-        width="75%" />
-    </center>
-    <h1>Data Science Careers: An Overview</h1>
-    <p>Experiencing exponential growth, data science careers are emerging across virtually all industries. As a result,
-      the availability of career opportunities is currently outstripping the existing demand, thereby increasing the
-      number of opportunities further.</p>
-    <div class="row">
-      <div class="mt-4 col">
-        <h2>Data Scientist</h2>
-        <p>
-          Data Scientists are often considered the "unicorns" of the data
-          analytics world. They possess a diverse skill set that includes
-          statistics, machine learning, data visualization, and programming.
-          Their primary role is to dive deep into data, derive valuable
-          insights, and build data models to predict future trends or automate
-          decision-making processes. They often work with Big Data and are
-          proficient in programming languages like Python or R.
-        </p>
-        <p>Very Statistics Heavy</p>
-        <h3>Key Responsibilities</h3>
-        <ul>
-          <li>Data collection and preprocessing</li>
-          <li>Exploratory data analysis</li>
-          <li>Building and validating predictive models</li>
-          <li>Advanced Data visualization and reporting</li>
-          <li>Consulting with stakeholders to apply data-driven solutions</li>
-        </ul>
+        <div class="mt-4 col">
+          <h2>Data Analyst</h2>
+          <p>
+            Data analysts are like storytellers for numbers and facts. They take
+            a bunch of raw information—kind of like puzzle pieces that don't
+            mean much on their own—and figure out the story they tell together.
+            This helps businesses understand what the numbers are saying so they
+            can make smart choices. Data analysts may not create complicated
+            computer programs that learn on their own (those are called machine
+            learning models), but they are really good at using math to explore
+            data and at making charts and graphs that help explain it. They use
+            special computer programs like SQL, which helps them pull out the
+            data they need, and other programs like Excel or Tableau to create
+            visuals that make the data easy to understand for everyone.
+          </p>
+          <p>
+            They spend a lot of time providing insights to the business based on
+            data so they need excellent communication skills to convey the story
+            told in data.
+          </p>
+          <h3>Key Responsibilities</h3>
+          <ul>
+            <li>Data gathering and data cleaning</li>
+            <li>Conducting statistical analysis</li>
+            <li>Creating data visualizations and dashboards</li>
+            <li>Interpreting data to provide actionable insights</li>
+            <li>Presenting findings to stakeholders</li>
+          </ul>
 
-        <h3>Skills Required</h3>
-        <ul>
-          <li>
-            Strong understanding of statistics and machine learning algorithms
-          </li>
-          <li>
-            Proficiency in programming languages like Python, R, or Java
-          </li>
-          <li>
-            Experience with data manipulation libraries (e.g., Pandas, NumPy)
-          </li>
-          <li>
-            Familiarity with machine learning libraries (e.g., Scikit-learn,
-            TensorFlow)
-          </li>
-          <li>
-            Excellent communication skills to present findings and insights
-          </li>
-        </ul>
+          <h3>Skills Required</h3>
+          <ul>
+            <li>Strong analytical skills for interpreting data</li>
+            <li>Proficiency in SQL for data querying</li>
+            <li>
+              Experience with data visualization tools like Tableau, Excel, or
+              Power BI
+            </li>
+            <li>Basic understanding of statistical tests and metrics</li>
+            <li>Good communication skills to convey data insights</li>
+          </ul>
+        </div>
+
+        <div class="mt-4 col">
+          <!-- Insert Picture Here -->
+          <h2>Data Engineer</h2>
+          <p>
+            Data engineers are like the builders who make sure everything in the
+            data world is ready to go. They put together "data pipelines," which
+            are paths that guide data from where it starts to where it needs to
+            go. Think of them as the people who set up the tracks for a data
+            train. They also gather up big bunches of data to make sure it's
+            neat and ready for data scientists and data analysts to study. To do
+            this, they use some special big data tools—fancy technology like
+            Hadoop and Spark—and they're really good at computer languages,
+            which are like secret codes, such as Python, Java, and SQL. This is
+            super important because without data engineers, the data can't get
+            to the right place to be looked at and used properly.
+          </p>
+          <p>
+            Very close to software engineering with similar skillset needed with
+            programming/coding.
+          </p>
+          <h3>Key Responsibilities</h3>
+          <ul>
+            <li>
+              Designing, constructing, and maintaining scalable data pipelines
+            </li>
+            <li>Data gathering, data transformation, and data cleaning</li>
+            <li>
+              Collaborating with data architects to design data models and
+              database systems
+            </li>
+            <li>Managing and optimizing data retrieval processes</li>
+            <li>Ensuring data security and compliance</li>
+          </ul>
+
+          <h3>Skills Required</h3>
+          <ul>
+            <li>
+              Strong programming skills in languages like Python, Java, or Scala
+            </li>
+            <li>Proficiency in SQL and NoSQL databases</li>
+            <li>Experience with Big Data technologies like Hadoop, Spark</li>
+            <li>
+              Understanding of data pipeline orchestration tools like Apache
+              Airflow
+            </li>
+            <li>
+              Knowledge of cloud platforms like AWS, Azure, or Google Cloud
+            </li>
+          </ul>
+        </div>
       </div>
-
-      <div class="mt-4 col">
-        <h2>Data Analyst</h2>
-        <p>
-          Data Analysts are the storytellers of the data world. They take raw
-          data and turn it into actionable insights that businesses can use to
-          make informed decisions. While they may not build complex machine
-          learning models, they are skilled in statistical analysis and data
-          visualization. Analysts often use tools like SQL for data extraction
-          and Excel or Tableau for data visualization.
-        </p>
-        <p>
-          They spend a lot of time providing insights to the business based on
-          data so they need excellent communication skills to convey the story told in data.
-        </p>
-        <h3>Key Responsibilities</h3>
-        <ul>
-          <li>Data gathering and data cleaning</li>
-          <li>Conducting statistical analysis</li>
-          <li>Creating data visualizations and dashboards</li>
-          <li>Interpreting data to provide actionable insights</li>
-          <li>Presenting findings to stakeholders</li>
-        </ul>
-
-        <h3>Skills Required</h3>
-        <ul>
-          <li>Strong analytical skills for interpreting data</li>
-          <li>Proficiency in SQL for data querying</li>
-          <li>
-            Experience with data visualization tools like Tableau, Excel, or
-            Power BI
-          </li>
-          <li>Basic understanding of statistical tests and metrics</li>
-          <li>Good communication skills to convey data insights</li>
-        </ul>
-      </div>
-
-      <div class="mt-4 col">
+      <hr />
+      <div class="mt-4">
         <!-- Insert Picture Here -->
-        <h2>Data Engineer</h2>
-        <p>
-          Data Engineers are the backbone of any data analytics operation.
-          They are responsible for constructing data pipelines, assembling
-          large data sets, and preparing them for analysis by Data Scientists
-          or Data Analysts. Data Engineers typically work with Big Data
-          technologies like Hadoop, Spark, and are proficient in languages
-          like Python, Java, and SQL.
-        </p>
-        <p>
-          Very close to software engineering with similar skillset needed with
-          programming/coding.
-        </p>
-        <h3>Key Responsibilities</h3>
-        <ul>
-          <li>
-            Designing, constructing, and maintaining scalable data pipelines
-          </li>
-          <li>Data gathering, data transformation, and data cleaning</li>
-          <li>
-            Collaborating with data architects to design data models and
-            database systems
-          </li>
-          <li>Managing and optimizing data retrieval processes</li>
-          <li>Ensuring data security and compliance</li>
-        </ul>
+        <h2>Data Science Career Paths: Interactive Quiz</h2>
+        <div class="mt-4" id="quiz-section">
+          <form id="career-quiz">
+            <!-- Data Scientist Question -->
+            <div class="row align-items-center">
+              <div class="col">
+                <h4>Question 1</h4>
+                <p>
+                  Which data analytics career would require a good understanding
+                  of and ability to work with statistics?
+                </p>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="ds-question"
+                    id="ds-answer1"
+                    value="Data Scientist"
+                  />
+                  <label class="form-check-label" for="ds-answer1"
+                    >Data Scientist</label
+                  >
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="ds-question"
+                    id="ds-answer2"
+                    value="Data Analyst"
+                  />
+                  <label class="form-check-label" for="ds-answer2"
+                    >Data Analyst</label
+                  >
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="ds-question"
+                    id="ds-answer3"
+                    value="Data Engineer"
+                  />
+                  <label class="form-check-label" for="ds-answer3"
+                    >Data Engineer</label
+                  >
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="ds-question"
+                    id="ds-answer4"
+                    value="Data Mechanic"
+                  />
+                  <label class="form-check-label" for="ds-answer4"
+                    >Data Mechanic</label
+                  >
+                </div>
+              </div>
+              <div class="col">
+                <!-- Data Analyst Question -->
+                <h4 class="mt-4">Question 2</h4>
+                <p>
+                  Which data analytics career would most frequently involve
+                  communicating the story the data is telling to help make
+                  business decisions?
+                </p>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="da-question"
+                    id="da-answer1"
+                    value="Data Scientist"
+                  />
+                  <label class="form-check-label" for="da-answer1"
+                    >Data Scientist</label
+                  >
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="da-question"
+                    id="da-answer2"
+                    value="Data Analyst"
+                  />
+                  <label class="form-check-label" for="da-answer2"
+                    >Data Analyst</label
+                  >
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="da-question"
+                    id="da-answer3"
+                    value="Data Engineer"
+                  />
+                  <label class="form-check-label" for="da-answer3"
+                    >Data Engineer</label
+                  >
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="da-question"
+                    id="da-answer4"
+                    value="Data Mechanic"
+                  />
+                  <label class="form-check-label" for="da-answer4"
+                    >Data Mechanic</label
+                  >
+                </div>
+              </div>
+              <div class="col">
+                <!-- Data Engineer Question -->
+                <h4 class="mt-4">Question 3</h4>
+                <p>
+                  Which data analytics career would involve a good understanding
+                  of coding and programming?
+                </p>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="de-question"
+                    id="de-answer1"
+                    value="Data Scientist"
+                  />
+                  <label class="form-check-label" for="de-answer1"
+                    >Data Scientist</label
+                  >
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="de-question"
+                    id="de-answer2"
+                    value="Data Analyst"
+                  />
+                  <label class="form-check-label" for="de-answer2"
+                    >Data Analyst</label
+                  >
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="de-question"
+                    id="de-answer3"
+                    value="Data Engineer"
+                  />
+                  <label class="form-check-label" for="de-answer3"
+                    >Data Engineer</label
+                  >
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="de-question"
+                    id="de-answer4"
+                    value="Data Mechanic"
+                  />
+                  <label class="form-check-label" for="de-answer4"
+                    >Data Mechanic</label
+                  >
+                </div>
+              </div>
+            </div>
+            <!-- Data Mechanic Question -->
+            <h4 class="mt-4">Data Mechanic</h4>
+            <p>Is Data Mechanic a standard data analytics career?</p>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="dm-question"
+                id="dm-answer1"
+                value="Yes"
+              />
+              <label class="form-check-label" for="dm-answer1">Yes</label>
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="dm-question"
+                id="dm-answer2"
+                value="No"
+              />
+              <label class="form-check-label" for="dm-answer2">No</label>
+            </div>
 
-        <h3>Skills Required</h3>
-        <ul>
-          <li>
-            Strong programming skills in languages like Python, Java, or Scala
-          </li>
-          <li>Proficiency in SQL and NoSQL databases</li>
-          <li>Experience with Big Data technologies like Hadoop, Spark</li>
-          <li>
-            Understanding of data pipeline orchestration tools like Apache
-            Airflow
-          </li>
-          <li>
-            Knowledge of cloud platforms like AWS, Azure, or Google Cloud
-          </li>
-        </ul>
+            <button
+              type="button"
+              class="btn btn-primary mt-4"
+              onclick="checkAnswers()"
+            >
+              Submit
+            </button>
+          </form>
+
+          <div id="quiz-results" class="mt-4"></div>
+        </div>
       </div>
     </div>
-    <hr />
-    <div class="mt-4">
-      <!-- Insert Picture Here -->
-      <h2>Data Science Career Paths: Interactive Quiz</h2>
-      <div class="mt-4" id="quiz-section">
-        <form id="career-quiz">
-          <!-- Data Scientist Question -->
-          <div class="row align-items-center">
-            <div class="col">
-              <h4>Question 1</h4>
-              <p>
-                Which data analytics career would require a good understanding
-                of and ability to work with statistics?
-              </p>
-              <div class="form-check">
-                <input class="form-check-input" type="radio" name="ds-question" id="ds-answer1"
-                  value="Data Scientist" />
-                <label class="form-check-label" for="ds-answer1">Data Scientist</label>
-              </div>
-              <div class="form-check">
-                <input class="form-check-input" type="radio" name="ds-question" id="ds-answer2" value="Data Analyst" />
-                <label class="form-check-label" for="ds-answer2">Data Analyst</label>
-              </div>
-              <div class="form-check">
-                <input class="form-check-input" type="radio" name="ds-question" id="ds-answer3" value="Data Engineer" />
-                <label class="form-check-label" for="ds-answer3">Data Engineer</label>
-              </div>
-              <div class="form-check">
-                <input class="form-check-input" type="radio" name="ds-question" id="ds-answer4" value="Data Mechanic" />
-                <label class="form-check-label" for="ds-answer4">Data Mechanic</label>
-              </div>
-            </div>
-            <div class="col">
-              <!-- Data Analyst Question -->
-              <h4 class="mt-4">Question 2</h4>
-              <p>
-                Which data analytics career would most frequently involve
-                communicating the story the data is telling to help make
-                business decisions?
-              </p>
-              <div class="form-check">
-                <input class="form-check-input" type="radio" name="da-question" id="da-answer1"
-                  value="Data Scientist" />
-                <label class="form-check-label" for="da-answer1">Data Scientist</label>
-              </div>
-              <div class="form-check">
-                <input class="form-check-input" type="radio" name="da-question" id="da-answer2" value="Data Analyst" />
-                <label class="form-check-label" for="da-answer2">Data Analyst</label>
-              </div>
-              <div class="form-check">
-                <input class="form-check-input" type="radio" name="da-question" id="da-answer3" value="Data Engineer" />
-                <label class="form-check-label" for="da-answer3">Data Engineer</label>
-              </div>
-              <div class="form-check">
-                <input class="form-check-input" type="radio" name="da-question" id="da-answer4" value="Data Mechanic" />
-                <label class="form-check-label" for="da-answer4">Data Mechanic</label>
-              </div>
-            </div>
-            <div class="col">
-              <!-- Data Engineer Question -->
-              <h4 class="mt-4">Question 3</h4>
-              <p>
-                Which data analytics career would involve a good understanding
-                of coding and programming?
-              </p>
-              <div class="form-check">
-                <input class="form-check-input" type="radio" name="de-question" id="de-answer1"
-                  value="Data Scientist" />
-                <label class="form-check-label" for="de-answer1">Data Scientist</label>
-              </div>
-              <div class="form-check">
-                <input class="form-check-input" type="radio" name="de-question" id="de-answer2" value="Data Analyst" />
-                <label class="form-check-label" for="de-answer2">Data Analyst</label>
-              </div>
-              <div class="form-check">
-                <input class="form-check-input" type="radio" name="de-question" id="de-answer3" value="Data Engineer" />
-                <label class="form-check-label" for="de-answer3">Data Engineer</label>
-              </div>
-              <div class="form-check">
-                <input class="form-check-input" type="radio" name="de-question" id="de-answer4" value="Data Mechanic" />
-                <label class="form-check-label" for="de-answer4">Data Mechanic</label>
-              </div>
-            </div>
-          </div>
-          <!-- Data Mechanic Question -->
-          <h4 class="mt-4">Data Mechanic</h4>
-          <p>Is Data Mechanic a standard data analytics career?</p>
-          <div class="form-check">
-            <input class="form-check-input" type="radio" name="dm-question" id="dm-answer1" value="Yes" />
-            <label class="form-check-label" for="dm-answer1">Yes</label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="radio" name="dm-question" id="dm-answer2" value="No" />
-            <label class="form-check-label" for="dm-answer2">No</label>
-          </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+    <script>
+      function checkAnswers() {
+        let correctAnswers = 0;
 
-          <button type="button" class="btn btn-primary mt-4" onclick="checkAnswers()">
-            Submit
-          </button>
-        </form>
+        // Check Data Scientist Question
+        if (document.getElementById("ds-answer1").checked) {
+          correctAnswers++;
+        }
 
-        <div id="quiz-results" class="mt-4"></div>
-      </div>
-    </div>
-  </div>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="script.js"></script>
-  <script>
-    function checkAnswers() {
-      let correctAnswers = 0;
+        // Check Data Analyst Question
+        if (document.getElementById("da-answer2").checked) {
+          correctAnswers++;
+        }
 
-      // Check Data Scientist Question
-      if (document.getElementById("ds-answer1").checked) {
-        correctAnswers++;
+        // Check Data Engineer Question
+        if (document.getElementById("de-answer3").checked) {
+          correctAnswers++;
+        }
+
+        // Check Data Mechanic Question
+        if (document.getElementById("dm-answer2").checked) {
+          correctAnswers++;
+        }
+
+        let resultMessage = `You got ${correctAnswers} out of 4 questions correct.`;
+        document.getElementById(
+          "quiz-results"
+        ).innerHTML = `<h3>Quiz Results:</h3><p>${resultMessage}</p>`;
       }
-
-      // Check Data Analyst Question
-      if (document.getElementById("da-answer2").checked) {
-        correctAnswers++;
-      }
-
-      // Check Data Engineer Question
-      if (document.getElementById("de-answer3").checked) {
-        correctAnswers++;
-      }
-
-      // Check Data Mechanic Question
-      if (document.getElementById("dm-answer2").checked) {
-        correctAnswers++;
-      }
-
-      let resultMessage = `You got ${correctAnswers} out of 4 questions correct.`;
-      document.getElementById(
-        "quiz-results"
-      ).innerHTML = `<h3>Quiz Results:</h3><p>${resultMessage}</p>`;
-    }
-  </script>
-</body>
-
+    </script>
+  </body>
 </html>
