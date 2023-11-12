@@ -32,7 +32,7 @@ btnMinard.addEventListener("click", () => {
         statistical graphics.</p>
         <div class="row">
           <div class="col-sm-8">
-          <img src="minard.png" alt="Charles Minard" class="img-fluid mb-3">
+          <img src="img/minard.png" alt="Charles Minard" class="img-fluid mb-3">
         </div>
         <div class="col">
         <p>Drawn by Charles Minard in 1869</p>
@@ -142,7 +142,7 @@ btnNightingale.addEventListener("click", () => {
         </p>
         <!-- Link Image fit image to width of page -->
         <div class="container">
-          <img alt="Nightingale's Rose Diagram" class="img-fluid" src="Nightingale-mortality.jpg" />
+          <img alt="Nightingale's Rose Diagram" class="img-fluid" src="img/Nightingale-mortality.jpg" />
         </div>
         <div class="row">
           <div class="col">
