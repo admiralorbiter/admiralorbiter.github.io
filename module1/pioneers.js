@@ -101,14 +101,9 @@ btnNightingale.addEventListener("click", () => {
 
   <body>
     <div class="container mt-5">
-      <h1>Florence Nightingale: The Pioneer of Data in Nursing</h1>
-      <p>
-        Florence Nightingale, often hailed as the founder of modern nursing,
-        understood the importance of data. Contrary to the myth, Nightingale was
-        not just the "lady with the lamp." She was a pioneering statistician.
-      </p>
+      <h1>Florence Nightingale</h1>
       <section id="data-science-contribution">
-        <h2>Florence Nightingale's Contribution to Data Science</h2>
+        <h2The Pioneer of Data in Nursing</h2>
         <p>
           Florence Nightingale is often hailed as the founder of modern nursing,
           but her influence extends far beyond that realm. She was a pioneering
@@ -181,30 +176,36 @@ btnNightingale.addEventListener("click", () => {
             </p>
           </div>
         </div>
-        <h3>Relevance to Modern Data Science</h3>
-        <p>
-          Florence Nightingale's work aligns closely with the core principles of
-          modern data science, including data collection, analysis, and
-          visualization. She exemplified how data-driven decision-making could
-          have a transformative impact on society. Nightingale's efforts serve
-          as an inspiration for today's data scientists, reaffirming the
-          transformative power of data in solving real-world problems.
-        </p>
+        <div class="row">
+          <div class="col">
+            <h3>Relevance to Modern Data Science</h3>
+            <p>
+              Florence Nightingale's work aligns closely with the core principles of
+              modern data science, including data collection, analysis, and
+              visualization. She exemplified how data-driven decision-making could
+              have a transformative impact on society. Nightingale's efforts serve
+              as an inspiration for today's data scientists, reaffirming the
+              transformative power of data in solving real-world problems.
+            </p>
+          </div>
+          <div class="col">
+            <h2>Quick Quiz</h2>
+            <p>Who is Florence Nightingale?</p>
+            <form id="quiz">
+              <input id="nurse" name="answer" type="radio" value="nurse" />
+              <label for="nurse">Founder of modern nursing</label><br />
+              <input id="statistician" name="answer" type="radio" value="statistician" />
+              <label for="statistician">Pioneering statistician</label><br />
+              <input id="both" name="answer" type="radio" value="both" />
+              <label for="both">Both</label><br />
+              <input id="none" name="answer" type="radio" value="none" />
+              <label for="none">None</label><br /><br />
+              <input onclick="checkAnswer()" type="button" value="Submit" />
+            </form>
+            <p id="quiz-result"></p>
+          </div>
+        </div>
       </section>
-      <h2>Quick Quiz</h2>
-      <p>Who is Florence Nightingale?</p>
-      <form id="quiz">
-        <input id="nurse" name="answer" type="radio" value="nurse" />
-        <label for="nurse">Founder of modern nursing</label><br />
-        <input id="statistician" name="answer" type="radio" value="statistician" />
-        <label for="statistician">Pioneering statistician</label><br />
-        <input id="both" name="answer" type="radio" value="both" />
-        <label for="both">Both</label><br />
-        <input id="none" name="answer" type="radio" value="none" />
-        <label for="none">None</label><br /><br />
-        <input onclick="checkAnswer()" type="button" value="Submit" />
-      </form>
-      <p id="quiz-result"></p>
     </div>
   </body>
   <script>
