@@ -15,12 +15,12 @@ function loadModule(module) {
         break;
       case 'module2':
         links = `
-          <li class="nav-item"><a class="nav-link" href="../Module2/graphs.html">Graph Guide</a></li>
-          <li class="nav-item"><a class="nav-link" href="../Module2/Understanding_Missing_Data_and_Zero_Values_in_Datasets.html">Missing Data and Zero Values</a></li>
-          <li class="nav-item"><a class="nav-link" href="../Module2/The_Scale_of_Data__From_Bytes_to_Zettabytes.html">Scale of Data</a></li>
-          <li class="nav-item"><a class="nav-link" href="../Module2/Dealing_with_Anomalies_in_Data.html">Data Anomalies</a></li>
-          <li class="nav-item"><a class="nav-link" href="../Module2/The_Importance_of_Data_Quality_in_Analytics.html">Data Analytics</a></li>
-          <li class="nav-item"><a class="nav-link" href="../Module2/The_Trade-off_Between_Data_Accuracy_and_Speed.html">Trade-Off</a></li>
+          <li class="nav-item"><a class="nav-link" href="../module2/graphs.html">Graph Guide</a></li>
+          <li class="nav-item"><a class="nav-link" href="../module2/missing_data.html">Missing Data and Zero Values</a></li>
+          <li class="nav-item"><a class="nav-link" href="../module2/scale_of_data.html">Scale of Data</a></li>
+          <li class="nav-item"><a class="nav-link" href="../module2/anomalies.html">Data Anomalies</a></li>
+          <li class="nav-item"><a class="nav-link" href="../module2/dataquality.html">Data Analytics</a></li>
+          <li class="nav-item"><a class="nav-link" href="../module2/accuracy_vs_speed.html">Trade-Off</a></li>
         `;
         break;
       case 'module3':
