@@ -1,194 +1,188 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Graph Guide</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link href="../style.css" rel="stylesheet" />
+  </head>
 
-<head>
-  <meta charset="utf-8" />
-  <title>A Comprehensive Guide to Understanding Graphs</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link href="style.css" rel="stylesheet">
-</head>
-
-<body>
-  <!-- Header -->
-  <header id="header" class="bg-primary text-white">
+  <body>
+    <!-- Header -->
+    <header id="header" class="bg-primary text-white">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+          <a class="navbar-brand" href="#">Data Science</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="moduleDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Modules
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="moduleDropdown">
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="#"
+                      onclick="loadModule('module1')"
+                      >1. Overview</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="#"
+                      onclick="loadModule('module2')"
+                      >2. Graphs and Data</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="#"
+                      onclick="loadModule('module3')"
+                      >3. Tableau</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <!-- Placeholder for dynamic links -->
+              <div id="dynamicLinks"></div>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
     <div class="container">
-      <nav class="navbar navbar-expand-lg navbar-dark bg-primary">  
-        <a class="navbar-brand" href="#">Graph Adventure</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul class="navbar-nav">
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="moduleDropdown" role="button" data-bs-toggle="dropdown"
-                aria-expanded="false">
-                Modules
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="moduleDropdown">
-                <li><a class="dropdown-item" href="#" onclick="loadModule('module1')">1. Overview</a></li>
-                <li><a class="dropdown-item" href="#" onclick="loadModule('module2')">2. Graphs and Data</a></li>
-                <li><a class="dropdown-item" href="#" onclick="loadModule('module3')">3. Tableau</a></li>
-                <li><a class="dropdown-item" href="#" onclick="loadModule('module4')">4. Process</a></li>
-              </ul>
-            </li>
-            <!-- Placeholder for dynamic links -->
-            <div id="dynamicLinks">
-            </div>
-          </ul>
-        </div>
-      </nav>
-    </div>
-  </header>
-  <div class="container">
-    <h1 class="mt-4 mb-4">Graph Adventure!</h1>
-    <!-- Introduction -->
-    <div id="introduction">
-      <div class="card mt-3 mb-3">
-        <div class="card-body">
-          <h5 class="card-title">Introduction</h5>
-          <p>
-            Hey there, young explorer! 🚀 Ever wondered how to tell stories with numbers? Graphs are like magical
-            pictures that help us understand and share cool facts and figures. Dive in to uncover the secrets of these
-            magic pictures: from the lines that guide us, to the different types of graphs, and the special tricks to
-            make them come alive!
-          </p>
-        </div>
-      </div>
-      <!-- Section 1: Axes in Graphs -->
-      <div id="section1">
-        <h2>Section 1: Axes in Graphs</h2>
-        <div class="row justify-content-center">
-          <div class="col-sm-4">
-            <div class="card mt-3 mb-3">
-              <div class="card-body">
-                <h5 class="card-title">The X-Axis</h5>
-                <p>
-                  Think of the X-axis as the floor line of our graph's story. It's that line at the bottom that goes
-                  from
-                  left
-                  to right. It can tell us things like what days we're looking at or even which of our favorite movies
-                  we're
-                  comparing. It can be used to show both dimensions and measures. So, if we're tracking how many ice creams we eat over a week, the X-axis would have the
-                  days
-                  (like Monday, Tuesday, and so on), and another line (the Y-axis) would tell us how many ice creams we
-                  had!
-                </p>
-                <img src="xaxis.png" class="img-fluid"/>
+      <h1 class="mt-4 mb-4">Graph Guide!</h1>
+      <!-- Introduction -->
+      <div id="introduction">
+        <!-- Section 1: Axes in Graphs -->
+        <div id="section1">
+          <h2>Section 1: Axes in Graphs</h2>
+          <div class="row justify-content-center">
+            <div class="col-sm-4">
+              <div class="card mt-3 mb-3">
+                <div class="card-body">
+                  <h5 class="card-title">The X-Axis</h5>
+                  <p>
+                    Think of the X-axis as the floor line of our graph's story.
+                    It's that line at the bottom that goes from left to right.
+                    It can tell us things like what days we're looking at or
+                    even which of our favorite movies we're comparing. It can be
+                    used to show both dimensions and measures. So, if we're
+                    tracking how many ice creams we eat over a week, the X-axis
+                    would have the days (like Monday, Tuesday, and so on), and
+                    another line (the Y-axis) would tell us how many ice creams
+                    we had!
+                  </p>
+                  <img src="img/xaxis.png" class="img-fluid" />
+                </div>
               </div>
             </div>
-          </div>
-          <div class="col-sm-3">
-            <div class="card mt-3 mb-3">
-              <div class="card-body">
-                <h5 class="card-title">The Y-Axis</h5>
-                <p>
-                  The Y-axis is like the measuring stick of our graph's story. It stands tall, going up and down on the
-                  left
-                  side. If we think about our ice cream example, the Y-axis shows us how many ice creams we've eaten.
-                  So, if
-                  the number 5 is on the Y-axis, that means we had 5 ice creams that day!
-                </p>
-                <img src="yaxis.png" class="img-fluid mx-auto d-block" width="70%" height="50%"/>
+            <div class="col-sm-4">
+              <div class="card mt-3 mb-3">
+                <div class="card-body">
+                  <h5 class="card-title">The Y-Axis</h5>
+                  <p>
+                    The Y-axis is like the measuring stick of our graph's story.
+                    It stands tall, going up and down on the left side. If we
+                    think about our ice cream example, the Y-axis shows us how
+                    many ice creams we've eaten. So, if the number 5 is on the
+                    Y-axis, that means we had 5 ice creams that day!
+                  </p>
+                  <img
+                    src="img/yaxis.png"
+                    class="img-fluid mx-auto d-block"
+                    width="70%"
+                    height="50%"
+                  />
+                </div>
               </div>
             </div>
-          </div>
-          <div class="col-sm-4">
-            <div class="card mt-3 mb-3">
-              <div class="card-body">
-                <h5 class="card-title">The Z-Axis</h5>
-                <p>
-                  Imagine if our graph could pop out like a 3D movie! 🍿 That's where the Z-axis comes in. It's like a
-                  lift
-                  that goes up and down, giving our graph an extra layer of depth. It's super cool and helps us see
-                  things
-                  in
-                  3D when there's a lot to look at!
-                </p>
-                <img src="zaxis.png" class="img-fluid"/>
+            <div class="col-sm-4">
+              <div class="card mt-3 mb-3">
+                <div class="card-body">
+                  <h5 class="card-title">The Z-Axis</h5>
+                  <p>
+                    Imagine if our graph could pop out like a 3D movie! 🍿
+                    That's where the Z-axis comes in. It's like a lift that goes
+                    up and down, giving our graph an extra layer of depth. It's
+                    super cool and helps us see things in 3D when there's a lot
+                    to look at!
+                  </p>
+                  <img src="img/zaxis.png" class="img-fluid" />
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-      <!-- Section 2: Types of Graphs and Their Applications -->
-      <div id="section2">
-        <h2>Section 2: Types of Graphs and Their Applications</h2>
-        <div class="row">
-        <div class="card mt-3 mb-3 col m-2">
-          <div class="card-body">
-            <h5 class="card-title">Regional Analysis</h5>
-            <p>
-              Ever looked at a treasure map? 🗺️ Regional analysis is like that, but with data! It places data on geographical maps,
-              helping us see patterns and stories tied to places. Like finding out which city loves pizza the most or
-              where more people ride bicycles! 
-            </p>
-            <img src="regionalanalysis.png" class="img-fluid"/>
-          </div>
+        <!-- Section 2: Types of Graphs and Their Applications -->
+        <div id="section2">
+          <h2>Section 2: Types of Graphs and Their Applications</h2>
+          <div class="row justify-content-center"><img src="img/charts.png" class="img-fluid" /></div>
+          
         </div>
-
-        <div class="card mt-3 mb-3 col m-2">
-          <div class="card-body">
-            <h5 class="card-title">Bar Charts</h5>
-            <p>
-              When you have a single measure and wish to compare it across different
-              categories, a bar chart is often the best choice. For instance, a bar
-              chart could show the revenue generated by different departments in a
-              company.
-            </p>
-            <img src="barchart.png" class="img-fluid"/>
-          </div>
-        </div>
-
-        <div class="card mt-3 mb-3 col m-2">
-          <div class="card-body">
-            <h5 class="card-title">Line Graphs</h5>
-            <p>
-              Line graphs are like roller coasters! 🎢 They have lines that go up and down to show how things change
-              over
-              time. For example, if you want to see how your height changes as you grow older, a line graph is the way
-              to
-              go! They are perfect for showing trends over time.
-            </p>
-            <img src="linegraph.png" class="img-fluid"/>
-          </div>
-        </div>
-        </div>
-      </div>
-      <!-- Section 3: Other Important Concepts in Graphing -->
-      <div id="section3">
-        <h2>Section 3: Other Important Concepts in Graphing</h2>
-        <div class="row">
-          <div class="card mt-3 mb-3 col m-2">
-            <div class="card-body">
-              <h5 class="card-title">Measures and Dimensions on the X-Axis</h5>
-              <p>
-                The X-axis can display both measures and dimensions. Measures are
-                quantitative data like numbers or percentages, while dimensions are
-                qualitative data like categories or labels.
-              </p>
+        <!-- Section 3: Other Important Concepts in Graphing -->
+        <div id="section3">
+          <h2>Section 3: Other Important Concepts in Graphing</h2>
+          <div class="row">
+            <div class="card mt-3 mb-3 col m-2">
+              <div class="card-body">
+                <h5 class="card-title">Regional Analysis</h5>
+                <p>
+                  Ever looked at a treasure map? 🗺️ Regional analysis is like
+                  that, but with data! It places data on geographical maps,
+                  helping us see patterns and stories tied to places. Like
+                  finding out which city loves pizza the most or where more
+                  people ride bicycles!
+                </p>
+                <img src="img/regionalanalysis.png" class="img-fluid" />
+              </div>
             </div>
-          </div>
 
-          <div class="card mt-3 mb-3 col m-2">
-            <div class="card-body">
-              <h5 class="card-title">Bubble Charts</h5>
-              <p>
-                Bubble charts are unique as they use circles of varying sizes and
-                colors to represent data. This type of chart is useful when you want
-                to visualize large volumes of complex data.
-              </p>
+            <div class="card mt-3 mb-3 col m-2">
+              <div class="card-body">
+                <h5 class="card-title">Bubble Charts</h5>
+                <p>
+                  Bubble charts are unique as they use circles of varying sizes
+                  and colors to represent data. This type of chart is useful
+                  when you want to visualize large volumes of complex data.
+                </p>
+              </div>
             </div>
-          </div>
 
-          <div class="card mt-3 mb-3 col m-2">
-            <div class="card-body">
-              <h5 class="card-title">Treemaps</h5>
-              <p>
-                A treemap is a rectangular plot divided into smaller rectangles,
-                representing various data segments. This type of graph is useful for
-                showing hierarchical structures or part-to-whole relationships.
-              </p>
+            <div class="card mt-3 mb-3 col m-2">
+              <div class="card-body">
+                <h5 class="card-title">Treemaps</h5>
+                <p>
+                  A treemap is a rectangular plot divided into smaller
+                  rectangles, representing various data segments. This type of
+                  graph is useful for showing hierarchical structures or
+                  part-to-whole relationships.
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -196,6 +190,5 @@
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="script.js"></script>
-</body>
-
+  </body>
 </html>
