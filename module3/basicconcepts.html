@@ -1,135 +1,81 @@
 <!DOCTYPE html>
 
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <title>Basic Concepts</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <link href="style.css" rel="stylesheet" />
-  </head>
 
-  <body>
-    <!-- Header -->
-    <header id="header" class="bg-primary text-white">
-      <div class="container">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-          <a class="navbar-brand" href="#">Data Science</a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNavDropdown"
-            aria-controls="navbarNavDropdown"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav">
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  id="moduleDropdown"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Modules
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="moduleDropdown">
-                  <li>
-                    <a
-                      class="dropdown-item"
-                      href="#"
-                      onclick="loadModule('module1')"
-                      >1. Overview</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      class="dropdown-item"
-                      href="#"
-                      onclick="loadModule('module2')"
-                      >2. Graphs and Data</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      class="dropdown-item"
-                      href="#"
-                      onclick="loadModule('module3')"
-                      >3. Tableau</a
-                    >
-                  </li>
-                </ul>
-              </li>
-              <!-- Placeholder for dynamic links -->
-              <div id="dynamicLinks"></div>
-            </ul>
-          </div>
-        </nav>
-      </div>
-    </header>
-    <main class="container mt-5">
-      <h1>Basic Concepts</h1>
-      <p>
-        Every piece of data has a story. Maybe it's about how many pizzas were
-        sold last month or how many rainbows appeared this year. With Tableau,
-        we can share these stories in a fun and exciting way. Let's be
-        storytellers!
-      </p>
-      <p>
-        Have you ever seen a colorful chart or graph in a presentation? That's
-        data visualization! It's a fun way to show information. Instead of
-        looking at boring numbers, we can see pictures and colors to understand
-        data better. It's like turning math into art!
-      </p>
-      <div class="row">
-        <h2>Video Tutorials</h2>
-        <div class="col">
-          <p>
-            <iframe
-              width="560"
-              height="315"
-              src="https://www.youtube.com/embed/LLey4mzKMFU?si=NpYf4aBwGd5a3ZLF"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowfullscreen
-            ></iframe>
-          </p>
+<head>
+  <meta charset="utf-8" />
+  <title>Basic Concepts</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="style.css" rel="stylesheet" />
+</head>
+
+<body>
+  <!-- Header -->
+  <header id="header" class="bg-primary text-white">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <a class="navbar-brand" href="#">Data Science</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="moduleDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Modules
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="moduleDropdown">
+                <li>
+                  <a class="dropdown-item" href="#" onclick="loadModule('module1')">1. Overview</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#" onclick="loadModule('module2')">2. Graphs and Data</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#" onclick="loadModule('module3')">3. Tableau</a>
+                </li>
+              </ul>
+            </li>
+            <!-- Placeholder for dynamic links -->
+            <div id="dynamicLinks"></div>
+          </ul>
         </div>
-        <div class="col">
-          <p>
-            <iframe
-              width="560"
-              height="315"
-              src="https://www.youtube.com/embed/8DiTE3oncOE?si=dBdIZGrmNVU4iYIv"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowfullscreen
-            ></iframe>
-          </p>
-        </div>
-      </div>
-      <h2>Importing Data Into Tableau</h2>
-      <h3>Types of Data</h3>
-      <ul>
-        <li>Text File - .csv</li>
-        <li>Excel File - .xlsx or .xls</li>
-        <li>Database - .mdb or .accdb</li>
-        <li>JSON - .json</li>
-      </ul>
-      <h3>Importing Data using Tableau Cloud</h3>
-      <p>Go to New -> Workbook</p>
-      <img src="tableau-tutorial1.png" />
-      <div class="row">
+      </nav>
+    </div>
+  </header>
+  <main class="container mt-5">
+    <h1>Basic Concepts</h1>
+    <p>
+      Every piece of data has a story. Maybe it's about how many pizzas were
+      sold last month or how many rainbows appeared this year. With Tableau,
+      we can share these stories in a fun and exciting way. Let's be
+      storytellers!
+    </p>
+    <p>
+      Have you ever seen a colorful chart or graph in a presentation? That's
+      data visualization! It's a fun way to show information. Instead of
+      looking at boring numbers, we can see pictures and colors to understand
+      data better. It's like turning math into art!
+    </p>
+    <img src="img/tableau-basics.png" width="75%" class="rounded mx-auto d-block" />
+    <h2>Importing Data Into Tableau</h2>
+    <h3>Types of Data</h3>
+    <ul>
+      <li>Text File - .csv</li>
+      <li>Excel File - .xlsx or .xls</li>
+      <li>Database - .mdb or .accdb</li>
+      <li>JSON - .json</li>
+    </ul>
+    <img src="img/showme.png" width="75%" class="rounded mx-auto d-block" />
+    <img src="img/shelf.png" width="75%" class="rounded mx-auto d-block" />
+    <img src="img/tabs.png" width="75%" class="rounded mx-auto d-block" />
+    <img src="img/dimensionsandmeasures.png" width="75%" class="rounded mx-auto d-block" />
+    <!-- <h3>Importing Data using Tableau Cloud</h3>
+    <p>Go to New -> Workbook</p>
+    <img src="tableau-tutorial1.png" /> -->
+    <!-- <div class="row">
         <div class="col">
           <p>Find your data file in the data sources uploaded by your teacher</p>
           <img src="tableau-tutorial2.png" />
@@ -142,9 +88,29 @@
       <p>Now you are ready to start making graphs in the worksheet tab at the toolbar at the bottom of the screen.</p>
       <img src="tableau-tutorial4.png" />
       <p>If you aren't sure where to start, click the show me button near the top right to see the types of visual graphics that will work with the selected data.</p>
-      <img src="tableau-tutorial5.png" />
-    </main>
-  </body>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="script.js"></script>
+      <img src="tableau-tutorial5.png" /> -->
+    <div class="row">
+      <h2>Video Tutorials</h2>
+      <div class="col">
+        <p>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/LLey4mzKMFU?si=NpYf4aBwGd5a3ZLF"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+        </p>
+      </div>
+      <div class="col">
+        <p>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/8DiTE3oncOE?si=dBdIZGrmNVU4iYIv"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+        </p>
+      </div>
+    </div>
+  </main>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+
 </html>

@@ -25,13 +25,13 @@ function loadModule(module) {
         break;
       case 'module3':
         links = `
-        <li class="nav-item"><a class="nav-link" href="../Module3/basicconcepts.html">Basic Concepts</a></li>
-        <li class="nav-item"><a class="nav-link" href="../Module3/basiccharts.html">Basic Charts</a></li>
-        <li class="nav-item"><a class="nav-link" href="../Module3/cutomizing.html">Cutomizing</a></li>
-        <li class="nav-item"><a class="nav-link" href="../Module3/dashboard.html">Dashboard</a></li>
-        <li class="nav-item"><a class="nav-link" href="../Module3/advanced.html">Advanced</a></li>
-        <li class="nav-item"><a class="nav-link" href="../Module3/sharing.html">Sharing</a></li>
-        <li class="nav-item"><a class="nav-link" href="../Module3/playlists.html">Playlists</a></li>
+        <li class="nav-item"><a class="nav-link" href="../module3/basicconcepts.html">Basic Concepts</a></li>
+        <li class="nav-item"><a class="nav-link" href="../module3/basiccharts.html">Basic Charts</a></li>
+        <li class="nav-item"><a class="nav-link" href="../module3/customizing.html">Customizing</a></li>
+        <li class="nav-item"><a class="nav-link" href="../module3/dashboard.html">Dashboard</a></li>
+        <li class="nav-item"><a class="nav-link" href="../module3/advanced.html">Advanced</a></li>
+        <li class="nav-item"><a class="nav-link" href="../module3/sharing.html">Sharing</a></li>
+        <li class="nav-item"><a class="nav-link" href="../module3/playlists.html">Playlists</a></li>
         `;
         break;
     }
