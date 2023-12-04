@@ -38,7 +38,15 @@ For support, please reach out or open an issue in this repository.
 ## Acknowledgments
 - NC3 Data Analytics Certification Board
 - All the educators and students who contributed to the development of this resource.
+- Pathwways to Tech HS students for contributions to this project Fall 23.
 
 ## Roadmap
 
 - **Search**: Search feature Winter 23
+- **Revamped Curr**: Thanks to Emily Colebank and Jamie Provost for providing edits and changes to the curriculumn. Spring 24 we will launch a full redesign meant to make it more engaging for students.
+- **Practice Testing**: We are working on practice tests that will identify student's weak points for support.
+
+## Notes to My Future Self
+
+- Search done with Fuse.js
+
